@@ -1,0 +1,221 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #d0e5e6;
+}
+
+/** head bar **/
+.topline{
+	border-bottom: solid #bcbbbb;
+}
+
+.signature {
+	text-align: right;
+	margin: auto;
+	width: 100%;
+}
+
+.logo {
+	text-align: left;
+	margin: 5px;
+	padding-top: 20px;	
+}
+
+/** center image **/
+.center-image {
+	text-align: center;
+	margin: auto;
+	width: 90%;
+	max-height: 400px;
+}
+
+/** project **/
+.featured-work {
+	font: 22px;
+	margin: auto;
+	color: #2c3e50;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;	
+}
+
+.feature-work-info {
+	text-align: center;
+}
+
+.img-title {
+	font-size: 25px;
+	color: #1e1f0a; 
+}
+
+ /** footer **/
+.bottom {
+	padding: 40px 0 60px 0;
+	text-align: center;
+}
+
+/* First, lets make a class for our entire grid */
+.grid {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+/* Now lets make class for something whick takes up a whole row.*/
+.row {
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+/* Finally, we'll need to make a column class for every column; 12 column.*/
+
+.col-1 {
+	width: 8.33%;
+}
+
+/*each column expands by 8.3333%*/
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+ 
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+/****************** Responsive Design *******************/
+/*** Media Queries ***/
+
+/* 1. Nexus 5 */
+
+ @media only screen 
+ and (min-width: 360px) 
+ and (max-width: 767px) { 
+  *{
+	background-color: #8b9393; 	
+	 }
+	 
+	.logo { 
+			 margin: 40px;
+			 margin-left: 30px;
+		 }
+	 
+	.signature {
+			 margin-left: 30px; 
+			 text-align: center;
+			font-size: 15px;
+		     }
+	 
+	 .topline { 
+			 border-bottom: solid;
+		     margin: 30px; 
+		 }
+	
+	.row {
+			display: flex;
+		 }
+	 
+	 .center-image {
+			margin-left: 6%;
+			margin-top: 30px;
+		     width: 100%;
+		 }
+	 
+	 .featured-work {
+			font-size: 15px;
+			 padding-top: 10px;
+			 margin-top: -160px;
+		     margin-left: 50px;
+		 }
+		 
+	 .feature-work-info {
+			 flex-direction: column;
+			 margin-left: 65px;
+		 }
+	 
+	 .img-title {
+			 margin-left: 90px;
+			 padding: 10px
+		 }
+	 
+	 .omnifood-title2 { 
+			 padding: 20px;
+			 margin-left: 90px;
+		 }
+	 
+	.mnml-title3 {
+			 padding: 20px;
+			 margin-left: 90px;
+	 }
+	 
+	 .bottom { margin-left: 8%;}
+}
+
+/****2. iPad  ****/
+
+ @media only screen 
+ and (min-width: 768px) 
+and (max-width: 1024px){
+
+	.grid { margin-left: 155px; }
+	
+		 .signature { 
+			 margin-right: 9px;
+	}
+	
+		 .topline { margin-left: -74px; }
+	
+		 	  .center-image { 
+			 width: 100%;
+			 margin-left: 12%;
+			padding-top: 20px;
+			 margin-right: -100%;
+		 }
+		 
+		 .featured-work {
+			 text-align: center;
+			 margin-left: 30%;
+		 }
+	
+		 .feature-work-info {
+			 flex-direction: column;
+			 text-align: center;
+			 margin-left: 41%;
+		 }
+	
+		 .img-title { margin-left: 20px; }
+
+		 .omnifood-title2 { 
+			 padding: 6px;
+			 margin-left: 25px;
+			 font-size: 22px;
+		 }
+	
+	.mnml-title3 {
+			 padding: 5px;
+			 margin-left: 25px;
+		 }
+	
+	 .bottom { margin-left: 20%; }		 
+}
+
+
+
